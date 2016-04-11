@@ -15,5 +15,4 @@ module.exports = function (app) {
   // variable inside of server/app/configure/app-variables.js
   app.use(app.getValue('log'));
   require('./static-middleware')(app);
-
 };
