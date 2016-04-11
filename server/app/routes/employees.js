@@ -10,3 +10,12 @@ router.get('/', function (req, res, next) {
   })
   .then(null, next);
 });
+
+router.get('/:letter', function(req, res, next){
+	var letter = req.params.letter.charAt(0);
+	mongoose.model("Employee").find({name: new RegExp('^' + letter, 'i') })
+	.then(function(employees){
+		res.json(employees);
+	})
+	.then(null, next);
+})
