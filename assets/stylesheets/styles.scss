@@ -1,3 +1,55 @@
-.activeIndex{
-	background-color:red;
+body{
+	background:grey;
+	font-family: sans-serif;
+	margin-left: 5px;
+
+
+	a{
+		color: blue;
+		text-decoration: none;
+	}
+
+	li{
+		list-style: none;
+	}
+
+	a:visited{
+		color: blue;
+	}
+
+	list{
+		float: left;
+		clear: both;
+	}
+
+	.price{
+		padding-left: 20px;
+	}
+
+	.header{
+		ul{
+			margin: 0;
+			padding: 0;
+		}
+
+		a{
+			color: #013D16;
+			font-size: 3em;
+			display: inline-block;
+			padding-right:10px;
+		}
+
+	}
+
+	.picker{
+
+		a{
+			float: left;
+			display: inline-block;
+			padding-right:5px;
+		}
+	}
+
 }
+
+

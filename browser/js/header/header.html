@@ -1,3 +1,5 @@
-<div ng-repeat="link in links">
-<a ui-sref="{{link.state}}">{{link.label}}</a>
-</div>
+<nav class="header">
+	<ul>
+			<a ng-repeat="link in links" ui-sref="{{link.state}}"><li>{{link.label}}</li></a>
+	</ul>
+</nav> 
