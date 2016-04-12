@@ -5,3 +5,11 @@ northwind.run(function ($rootScope) {
     console.error('Error transitioning from "' + fromState.name + '" to "' + toState.name + '":', error);
   });
 });
+
+northwind.config(function ($stateProvider) {
+
+  $stateProvider.state('home', {
+    url: '/',
+  });
+
+});
