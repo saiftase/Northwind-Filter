@@ -1,9 +1,9 @@
 # Northwind
-Prioritized list of items
+List of products and employees, filterable by letter.
 
  - - -
 
- Use the following commands in the terminal to setup, test, and run Northwind.
+ Use the following commands in your terminal to setup, test, and run Northwind.
 
 ###Setup
 
