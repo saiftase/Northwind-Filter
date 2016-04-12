@@ -7,15 +7,14 @@ Prioritized list of items
 
 ###Setup
 
-Seed Database:
-Seed Database:
-```bash
-npm run seed
-```
-
 Installing Dependencies:
 ```bash
 npm install
+```
+
+Seed Database:
+```bash
+npm run seed
 ```
 
 ###Usage
