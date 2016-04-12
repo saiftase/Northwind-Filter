@@ -17,6 +17,11 @@ body{
 		color: blue;
 	}
 
+	a[disabled="disabled"]{
+		pointer-events: none;
+		color: #CCD5D9;
+	}
+
 	list{
 		float: left;
 		clear: both;

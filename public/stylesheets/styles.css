@@ -9,6 +9,9 @@ body {
     list-style: none; }
   body a:visited {
     color: blue; }
+  body a[disabled="disabled"] {
+    pointer-events: none;
+    color: #CCD5D9; }
   body list {
     float: left;
     clear: both; }

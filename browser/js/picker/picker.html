@@ -1,6 +1,6 @@
 <div class="picker">
-<ul ng-repeat="letter in letters">
-	<a ui-sref="{{context}}({letter: letter})">
+<ul ng-repeat="letter in alphabet">
+	<a ng-disabled="{{!letterActive(letter)}}" ui-sref="{{context}}({letter: letter})">
 		<li>{{letter}}</li>
 	</a>
 </ul>

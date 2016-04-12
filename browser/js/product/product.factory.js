@@ -14,6 +14,21 @@ northwind.factory('ProductFactory', function ($http, $q) {
     .then(getData)
   };
 
+  ProductFactory.activeLetters = function(){
+    return $http.get('/api/products')
+    .then(getData)
+    .then(function(products){
+      var letters = [];
+      products.forEach(function(product){
+        var letter = product.name[0];
+        if(letters.indexOf(letter) === -1){
+          letters.push(letter);
+        }
+      })   
+      return letters;
+    })
+  }
+
   return ProductFactory;
 
 });

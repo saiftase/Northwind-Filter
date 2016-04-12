@@ -18,7 +18,7 @@ northwind.config(function ($stateProvider) {
     resolve: {
       allEmployees: function (EmployeeFactory, $stateParams) {
         return EmployeeFactory.fetchByLetter($stateParams.letter);
-      }
+      },
     }
   });
 

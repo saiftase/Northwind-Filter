@@ -14,6 +14,21 @@ northwind.factory('EmployeeFactory', function ($http) {
     .then(getData)
   };
 
+  EmployeeFactory.activeLetters = function(){
+    return $http.get('/api/employees')
+    .then(getData)
+    .then(function(employees){
+      var letters = [];
+      employees.forEach(function(employee){
+        var letter = employee.name[0];
+        if(letters.indexOf(letter) === -1){
+          letters.push(letter);
+        }
+      })   
+      return letters;
+    })
+  }
+
   return EmployeeFactory;
 
 });
